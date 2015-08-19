@@ -1,0 +1,77 @@
+Week 2, Day 1
+NOTES re to TICTACTOE:
+
+- write pseudo code
+	- when i cllick on a box...
+		- it should turn O if it is Os turn, X if it is Xs turn
+		(only if box is empty)
+
+- can type div.board and press tab and it creates the right syntax
+
+- "this" means the current thing/object
+
+CSS:
+	- for block, 
+
+GIT & GITHUB:
+
+git fetch: goes and fetches new files
+git merge: merges new files (be careful, merges can overwrite files)
+git pull: does both fetch and merge simultaneously
+
+cloning wih HTTPS prompt credntials to input vs SSH doesn't (just uses your key on computer)
+
+Mercurial is another version of git, does the same thing (aka Hg)
+Bitbucket is another option instead of GitHub
+
+Fork vs Clone:
+
+Fork: [avoid for now]
+- Fork a repo into own github account
+- can't just do a git pull on a repo to update
+- allows you to freely experiment with changes
+- or use someone else's project as a starting point for your own
+
+Clone:
+- Take local copy on your laptop
+
+CLI - Command Line Interface
+
+Js callBacks - Eric led:
+
+Keyword - instanceOf - will be instanceOf Object
+
+
+function doubler (num) {
+    if(typeof num === "number"){
+        console.log(num*2)
+    }else if(typeof num !== "number"){
+        console.log("this is a string")
+    }
+    
+}
+
+doubler("you")
+
+'this' is whatever object you were in most recently.
+
+LAB:
+
+// Write a function generator to make the following code work correctly:
+function makeMultiplicator(n) {
+    return function(x){
+    return x * n;
+  }
+}
+
+
+var timesThree = makeMultiplicator(3),
+    timesNine = makeMultiplicator(9);
+
+if (timesThree !== undefined && timesThree(12) === 36) {
+  console.log('the TimesThree multiplicator works');
+}
+
+if (timesNine !== undefined && timesNine(3) === 27) {
+  console.log('the timesNine multiplicator works');
+}
